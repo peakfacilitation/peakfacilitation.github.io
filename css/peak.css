@@ -1,0 +1,384 @@
+/* CSS Document */
+body {
+	background-color: #a0bce2;
+	margin: 109px 0px;
+	padding: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	background: #a0bce2 url(../images/bg-med.jpg) -90px -90px fixed;
+	font-weight: normal;
+	font-size: small;
+}
+.skipnav {
+	float: left;
+	position: relative;
+	height: 0; 
+	text-indent: -5000px; 
+	overflow: hidden;
+}
+/*************** STYLES ***************/
+@font-face{  
+    font-family: Trebuchet_MS;  
+    src: url('../fonts/Trebuchet_MS.eot'); /* For IE */ 
+    src: local('Trebuchet_MS'), url('../fonts/Trebuchet MS.ttf') format('truetype'); /* For non-IE */ 
+} 
+@font-face{  
+    font-family: Milo;  
+    src: url('../fonts/MiTxLF.eot'); /* For IE */ 
+    src: local('Milo'), url('../fonts/MiTxLF.ttf') format('truetype'); /* For non-IE */ 
+} 
+@font-face{  
+    font-family: Lucida_Fax_Demibold;  
+    src: url('../fonts/Lucida_Fax_Demibold.eot'); /* For IE */ 
+    src: local('Lucida_Fax'), url('../fonts/Lucida_Fax_Demibold.ttf') format('truetype'); /* For non-IE */ 
+} 
+@font-face{  
+    font-family: Lucida_Fax_Regular;  
+    src: url('../fonts/Lucida_Fax_Regular.eot'); /* For IE */ 
+    src: local('Lucida_Fax'), url('../fonts/Lucida_Fax_Regular.ttf') format('truetype'); /* For non-IE */ 
+} 
+img {
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;	
+}
+
+#stripe-container p {
+	margin-left: 62px; 
+	margin-top: 15px;
+	color: #efefef;
+	font-family: Milo;
+	font-size: 14px;
+}
+#stripe-container p .quote {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+/*************** STRUCTURE ***************/
+#main-container {
+	position: relative;
+	width: 962px;
+	margin: 0 auto;
+	padding: 0;
+	border-top: 10px solid #502e7f;
+	display: block;
+}
+#header, #forward-container, #stripe-container, #content-container, #footer {
+	position: relative;
+	float: left;
+	clear: both; 
+	width: 962px;
+	background-color: #fff;
+}
+#header {
+	height: 171px;	
+}
+#forward-container {
+	border-top: 10px solid #b0c756;
+	background-color: #d2dea5;
+	font-family: Lucida_Fax_Regular;
+	color: #4f2d7f;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: normal;
+	height: 290px;
+}
+#forward-text {
+	float: left;
+	display: inline;
+	position: relative;
+	margin-left: 70px;
+	width: 310px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+#forward-image {
+	position: relative;
+	margin-top: 0;
+	float: left;
+	margin-left: 40px;
+	display: inline;	
+}
+#forward-image img {
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;	
+}
+#stripe-container {
+	height: 50px;
+	background-color: #7d9abc;
+}
+#content-container {
+	floar: left;
+	clear: both;
+	width: 962px;
+	padding-bottom: 60px;	
+}
+#content-container .lead-sidebar {
+	float: left;
+	display: inline;
+	position: relative;
+	margin-left: 70px;
+	width: 310px;
+	font-family: Lucida_Fax_Regular;
+	font-size: 15px;
+	line-height: 25px;
+	color: #4f2d7f;
+}
+#content-container .lead-sidebar img {
+-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;	
+}
+#content-container .content {
+	float: left;
+	display: inline;
+	position: relative;
+	margin-left: 40px;
+	width: 520px;
+	font-family: Trebuchet_MS;
+	color: #636466;
+	font-size: 14px;
+	line-height: 24px;
+}
+.full-article {
+	float: left;
+	display: inline;
+	position: relative;
+	margin-left: 70px;
+	width: 840px;
+	font-family: Trebuchet_MS;
+	color: #636466;
+	font-size: 14px;
+	line-height: 24px;
+}
+.full-article img {
+	float: left; 
+	display: inline;
+	margin-right: 60px;
+	margin-bottom: 15px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;		
+}
+#content-container .full-article .lead-sidebar {
+	float: left;
+	display: inline;
+	position: relative;
+	margin-left: 0;
+	width: 310px;
+	font-family: Lucida_Fax_Regular;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #4f2d7f;
+}
+#content-container .full-article .lead-sidebar p {
+	margin-top: 15px;
+	font-weight: normal;
+}
+.right-content {
+	margin-left: 350px;
+	width: 500px;
+	display: block;
+}
+	
+.full-article .creditline {
+	color: #5582ab;
+	font-weight: normal;
+}
+.passage {
+	float: left;
+	display: inline;
+	position: relative;
+	padding: 0 70px 0px 70px;
+	width: 822px;
+	font-family: Trebuchet_MS;
+	color: #636466;
+	font-size: 14px;
+	line-height: 19px;
+	clear: both;
+	border-bottom: 5px solid #d3cbdf;
+}
+#content-container .last {
+	border-bottom: none;
+}
+.passage img {
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;		
+}
+.passage h3 {
+	font-family: Lucida_Fax_Regular, georgia, serif;
+	color: #4f2d7f;
+	font-size: 15px;
+	margin-bottom: -15px;
+}
+.passage-text {
+	float: left;
+	position: relative;
+	display: block;	
+	width: 480px;
+}
+.passage p {
+	float: left;
+	display: inline;
+	position: relative;
+	font-size: 14px;
+	font-family: Trebuchet_MS;
+	font-weight: normal;
+}
+.odd .passage-photo {
+	float: left; 
+	display: inline;
+	margin-right: 60px;
+	margin-bottom: 30px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;		
+}
+.even .passage-photo {
+	float: right; 
+	display: inline;
+	margin-left: 60px;
+	margin-bottom: 30px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;		
+}
+#footer {
+	float: left;
+	position: relative;
+	display: block;
+	border-top: 10px solid #502e7f;
+	background-color: transparent;	
+	font-family: Trebuchet_MS, sans-serif;
+	font-weight: bold;
+	color: #5582ab;
+	font-size: 12px;
+}
+#footer p {margin-left: 70px; font-weight: normal;}
+/*************** BRANDING ***************/
+h1#branding {
+	position: relative;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	left: 66px;
+	top: 42px; 
+	width: 281px;
+	height: 104px;
+	background-image: url(../images/peak-facilitation-group-logo.png);
+	text-indent: -5000px;
+	overflow: none;
+}
+h1#branding a {
+	position: relative;
+	display: block;
+	width: 281px;
+	height: 104px;	
+}
+
+/*************** NAVIGATION ***************/
+#main-menu {
+	float: left;
+	position: absolute;
+	left: 410px;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: Milo;
+}
+.menu-item {
+	position: relative;
+	float: left;
+	display: inline;
+	width: 100px;
+	height: 33px;
+	line-height: 35px;
+	top: 0px;
+  	margin-left: 15px;
+	list-style: none;
+	background-color: #b4c3d8;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	text-transform: uppercase;	
+}
+.menu-item a {
+	color: #608ab1;
+	font-size: 16px;
+	text-decoration: none;
+	width: 100px;
+	height: 33px;
+  	margin: 20px 0 0 10px;
+}
+.sub-menu {
+  	position: absolute;
+  	left: 0;
+  	width: 150px;
+  	list-style: none;
+  	padding: 0;
+	padding-top: 12px;
+  	margin: 0;
+  	line-height: 20px;
+}
+.sub-item {
+  	position: relative;
+  	height: 26px;
+  	line-height: 20px;
+	font-family: Lucida_Fax_Demibold;
+	font-size: 14px;
+	text-transform: none;
+	font-weight: normal;
+	text-wrap: none;
+	color: #9682b0;
+	margin-left: 10px;
+	display: none;
+}
+.sub-item a {
+	margin-left: 0px;
+	font-weight: normal;
+	color: #9682b0;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+
+.open {background: #9fbc2e;}
+.menu-item:hover {background: #D8E4AC;} 
+.menu-item:hover a {color: #fff;}
+.menu-item:hover .sub-item {display: block;}
+.menu-item:hover .sub-item a {color: #9682b0;}
+
+
+.open a  {color: #fff;}
+.open .sub-item {display: block;}
+.open .sub-item a {color: #9682b0;}
+
+
+.open .sub-menu .selected a, .open .sub-item a:hover, .menu-item .sub-item a:hover {color: #4f2d7f;}
+.contact li {
+	width: 250px;
+	margin-left: 10px;	
+}
+
+/*
+
+.open .visible {display: inline !important; font-weight: normal;}
+.open .selected {display: block !important; font-weight: bold;}
+
+.menu-item:hover .sub-item a {font-size: 15px; font-weight: normal; color: #9682b0;}
+#main-menu li.sub-menu .selected {display: inline; font-weight: bold;}
+.sub-item:hover { background: transparent;}
+.menu-item:hover .sub-item:hover a, .sub-item:hover a { color: #4f2d7f;} */
+
