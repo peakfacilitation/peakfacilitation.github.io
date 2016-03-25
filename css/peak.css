@@ -11,40 +11,40 @@ body {
 .skipnav {
 	float: left;
 	position: relative;
-	height: 0; 
-	text-indent: -5000px; 
+	height: 0;
+	text-indent: -5000px;
 	overflow: hidden;
 }
 /*************** STYLES ***************/
-@font-face{  
-    font-family: Trebuchet_MS;  
-    src: url('../fonts/Trebuchet_MS.eot'); /* For IE */ 
-    src: local('Trebuchet_MS'), url('../fonts/Trebuchet MS.ttf') format('truetype'); /* For non-IE */ 
-} 
-@font-face{  
-    font-family: Milo;  
-    src: url('../fonts/MiTxLF.eot'); /* For IE */ 
-    src: local('Milo'), url('../fonts/MiTxLF.ttf') format('truetype'); /* For non-IE */ 
-} 
-@font-face{  
-    font-family: Lucida_Fax_Demibold;  
-    src: url('../fonts/Lucida_Fax_Demibold.eot'); /* For IE */ 
-    src: local('Lucida_Fax'), url('../fonts/Lucida_Fax_Demibold.ttf') format('truetype'); /* For non-IE */ 
-} 
-@font-face{  
-    font-family: Lucida_Fax_Regular;  
-    src: url('../fonts/Lucida_Fax_Regular.eot'); /* For IE */ 
-    src: local('Lucida_Fax'), url('../fonts/Lucida_Fax_Regular.ttf') format('truetype'); /* For non-IE */ 
-} 
+@font-face{
+    font-family: Trebuchet_MS;
+    src: url('../fonts/Trebuchet_MS.eot'); /* For IE */
+    src: local('Trebuchet_MS'), url('../fonts/Trebuchet MS.ttf') format('truetype'); /* For non-IE */
+}
+@font-face{
+    font-family: Milo;
+    src: url('../fonts/MiTxLF.eot'); /* For IE */
+    src: local('Milo'), url('../fonts/MiTxLF.ttf') format('truetype'); /* For non-IE */
+}
+@font-face{
+    font-family: Lucida_Fax_Demibold;
+    src: url('../fonts/Lucida_Fax_Demibold.eot'); /* For IE */
+    src: local('Lucida_Fax'), url('../fonts/Lucida_Fax_Demibold.ttf') format('truetype'); /* For non-IE */
+}
+@font-face{
+    font-family: Lucida_Fax_Regular;
+    src: url('../fonts/Lucida_Fax_Regular.eot'); /* For IE */
+    src: local('Lucida_Fax'), url('../fonts/Lucida_Fax_Regular.ttf') format('truetype'); /* For non-IE */
+}
 img {
 	-moz-border-radius-bottomright: 5px;
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;	
+	border-bottom-left-radius: 5px;
 }
 
 #stripe-container p {
-	margin-left: 62px; 
+	margin-left: 62px;
 	margin-top: 15px;
 	color: #efefef;
 	font-family: Milo;
@@ -67,12 +67,12 @@ img {
 #header, #forward-container, #stripe-container, #content-container, #footer {
 	position: relative;
 	float: left;
-	clear: both; 
+	clear: both;
 	width: 962px;
 	background-color: #fff;
 }
 #header {
-	height: 171px;	
+	height: 171px;
 }
 #forward-container {
 	border-top: 10px solid #b0c756;
@@ -98,13 +98,13 @@ img {
 	margin-top: 0;
 	float: left;
 	margin-left: 40px;
-	display: inline;	
+	display: inline;
 }
 #forward-image img {
 	-moz-border-radius-bottomright: 5px;
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;	
+	border-bottom-left-radius: 5px;
 }
 #stripe-container {
 	height: 50px;
@@ -114,7 +114,7 @@ img {
 	floar: left;
 	clear: both;
 	width: 962px;
-	padding-bottom: 60px;	
+	padding-bottom: 60px;
 }
 #content-container .lead-sidebar {
 	float: left;
@@ -131,7 +131,7 @@ img {
 -moz-border-radius-bottomright: 5px;
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;	
+	border-bottom-left-radius: 5px;
 }
 #content-container .content {
 	float: left;
@@ -156,14 +156,14 @@ img {
 	line-height: 24px;
 }
 .full-article img {
-	float: left; 
+	float: left;
 	display: inline;
 	margin-right: 60px;
 	margin-bottom: 15px;
 	-moz-border-radius-bottomright: 5px;
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;		
+	border-bottom-left-radius: 5px;
 }
 #content-container .full-article .lead-sidebar {
 	float: left;
@@ -186,7 +186,7 @@ img {
 	width: 500px;
 	display: block;
 }
-	
+
 .full-article .creditline {
 	color: #5582ab;
 	font-weight: normal;
@@ -211,7 +211,7 @@ img {
 	-moz-border-radius-bottomright: 5px;
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;		
+	border-bottom-left-radius: 5px;
 }
 .passage h3 {
 	font-family: Lucida_Fax_Regular, georgia, serif;
@@ -222,7 +222,7 @@ img {
 .passage-text {
 	float: left;
 	position: relative;
-	display: block;	
+	display: block;
 	width: 480px;
 }
 .passage p {
@@ -234,31 +234,31 @@ img {
 	font-weight: normal;
 }
 .odd .passage-photo {
-	float: left; 
+	float: left;
 	display: inline;
 	margin-right: 60px;
 	margin-bottom: 30px;
 	-moz-border-radius-bottomright: 5px;
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;		
+	border-bottom-left-radius: 5px;
 }
 .even .passage-photo {
-	float: right; 
+	float: right;
 	display: inline;
 	margin-left: 60px;
 	margin-bottom: 30px;
 	-moz-border-radius-bottomright: 5px;
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
-	border-bottom-left-radius: 5px;		
+	border-bottom-left-radius: 5px;
 }
 #footer {
 	float: left;
 	position: relative;
 	display: block;
 	border-top: 10px solid #502e7f;
-	background-color: transparent;	
+	background-color: transparent;
 	font-family: Trebuchet_MS, sans-serif;
 	font-weight: bold;
 	color: #5582ab;
@@ -272,7 +272,7 @@ h1#branding {
 	margin: 0;
 	padding: 0;
 	left: 66px;
-	top: 42px; 
+	top: 42px;
 	width: 281px;
 	height: 104px;
 	background-image: url(../images/peak-facilitation-group-logo.png);
@@ -283,7 +283,7 @@ h1#branding a {
 	position: relative;
 	display: block;
 	width: 281px;
-	height: 104px;	
+	height: 104px;
 }
 
 /*************** NAVIGATION ***************/
@@ -312,7 +312,7 @@ h1#branding a {
 	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
 	border-bottom-left-radius: 5px;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 .menu-item a {
 	color: #608ab1;
@@ -355,7 +355,7 @@ h1#branding a {
 
 
 .open {background: #9fbc2e;}
-.menu-item:hover {background: #D8E4AC;} 
+.menu-item:hover {background: #D8E4AC;}
 .menu-item:hover a {color: #fff;}
 .menu-item:hover .sub-item {display: block;}
 .menu-item:hover .sub-item a {color: #9682b0;}
@@ -369,7 +369,7 @@ h1#branding a {
 .open .sub-menu .selected a, .open .sub-item a:hover, .menu-item .sub-item a:hover {color: #4f2d7f;}
 .contact li {
 	width: 250px;
-	margin-left: 10px;	
+	margin-left: 10px;
 }
 
 /*
@@ -381,4 +381,3 @@ h1#branding a {
 #main-menu li.sub-menu .selected {display: inline; font-weight: bold;}
 .sub-item:hover { background: transparent;}
 .menu-item:hover .sub-item:hover a, .sub-item:hover a { color: #4f2d7f;} */
-
