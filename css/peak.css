@@ -186,10 +186,12 @@ img {
 	width: 500px;
 	display: block;
 }
-
 .full-article .creditline {
 	color: #5582ab;
 	font-weight: normal;
+}
+.full-article .divider {
+	border-bottom: 5px solid #d3cbdf;
 }
 .passage {
 	float: left;
@@ -204,7 +206,7 @@ img {
 	clear: both;
 	border-bottom: 5px solid #d3cbdf;
 }
-#content-container .last {
+#content-container .last, .full-article:last-child {
 	border-bottom: none;
 }
 .passage img {
@@ -233,7 +235,7 @@ img {
 	font-family: Trebuchet_MS;
 	font-weight: normal;
 }
-.odd .passage-photo {
+.passage:nth-child(odd) .passage-photo {
 	float: left;
 	display: inline;
 	margin-right: 60px;
@@ -243,7 +245,7 @@ img {
 	-moz-border-radius-bottomleft: 5px;
 	border-bottom-left-radius: 5px;
 }
-.even .passage-photo {
+.passage:nth-child(even) .passage-photo {
 	float: right;
 	display: inline;
 	margin-left: 60px;
