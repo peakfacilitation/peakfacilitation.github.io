@@ -374,6 +374,14 @@ h1#branding a {
 	margin-left: 10px;
 }
 
+/* Facilitator attribution */
+.facilitator {
+	display: block;
+	margin-top: 8px;
+	font-style: italic;
+	color: #9682b0;
+}
+
 /*
 
 .open .visible {display: inline !important; font-weight: normal;}
