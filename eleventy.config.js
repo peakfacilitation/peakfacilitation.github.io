@@ -1,19 +1,16 @@
 module.exports = function(eleventyConfig) {
-  // Static assets already exist in root - no passthrough copy needed
-  // since we output to "." (in-place generation)
+  // Copy static assets to docs/
+  eleventyConfig.addPassthroughCopy({ "css": "css" });
+  eleventyConfig.addPassthroughCopy({ "images": "images" });
+  eleventyConfig.addPassthroughCopy({ "fonts": "fonts" });
 
-  // Don't process these directories
-  eleventyConfig.ignores.add(".reference/**");
+  // Don't process these as templates
   eleventyConfig.ignores.add("node_modules/**");
-  eleventyConfig.ignores.add("css/**");
-  eleventyConfig.ignores.add("images/**");
-  eleventyConfig.ignores.add("fonts/**");
-  eleventyConfig.ignores.add("history/**");
 
   return {
     dir: {
       input: "src",
-      output: ".",        // Output to root (in-place generation)
+      output: "docs",     // Output to docs/ for GitHub Pages
       includes: "_includes",
       data: "_data"
     },
