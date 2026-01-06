@@ -1,0 +1,13 @@
+{
+  "name": "peak-facilitation-site",
+  "version": "1.0.0",
+  "description": "Peak Facilitation Group website",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf index.html about.html values.html testimonials.html 404.html projects-water.html projects-landfire.html projects-wildlife.html projects-retreats.html"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

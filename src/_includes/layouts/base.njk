@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="shortcut icon" href="/images/favico.png" />
+<link rel="apple-touch-icon" href="/images/favico.png" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Peak Facilitation Group &gt; {{ title }}</title>
+<link rel="stylesheet" type="text/css" href="css/peak.css"{% if not page.url == '/' %} {% endif %}/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.googleAnalyticsId }}');
+</script>
+</head>
+
+<body>
+<div id="main-container">
+
+	<div id="header">
+    	<h1 id="branding"><a href="index.html">Peak Facilitation Group</a></h1>
+    	<ul id="main-menu">
+{%- for item in navigation.main %}
+        	<li class="menu-item{% if item.class %} {{ item.class }}{% endif %}{% if menuParent == item.label %} open{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a>
+{%- if item.children %}
+            	<ul class="sub-menu">
+{%- for child in item.children %}
+                	<li class="sub-item{% if menuItem == child.label %} selected{% endif %}">{% if child.url %}<a href="{{ child.url }}">{{ child.label | safe }}</a>{% else %}{{ child.label }}{% endif %}</li>
+{%- endfor %}
+                </ul>
+                </li>
+{%- else %}
+</li>
+{%- endif %}
+{%- endfor %}
+            </li>
+        </ul>
+    </div>
+
+{% if forward %}
+    <div id="forward-container">
+    	<div id="forward-text">
+        {{ forward.text | safe }}
+        </div>
+        <div id="forward-image">
+        	<img src="{{ forward.image }}" width="{{ forward.width | default(486) }}" height="{{ forward.height | default(266) }}" alt="{{ forward.alt }}" />
+        </div>
+    </div>
+{% endif %}
+
+{% if stripe %}
+    <div id="stripe-container">
+    	<p>{{ stripe | safe }}</p>
+    </div>
+{% endif %}
+
+    <div id="content-container">
+{{ content | safe }}
+    </div>
+
+    <div id="footer">
+    	<p>&copy;{{ site.copyright }}</p>
+    </div>
+
+</div>
+</body>
+</html>
