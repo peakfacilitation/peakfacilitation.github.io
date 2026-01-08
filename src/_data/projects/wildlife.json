@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Eagle County Community Wildlife Roundtable",
+    "image": "projects-eagle-wildlife.jpg",
+    "alt": "Eagle County Community Wildlife Roundtable",
+    "description": "The Eagle County Community Wildlife Roundtable aims to understand issues facing wildlife populations in the Eagle Valley and address those issues through realistic actions that are broadly supported by the community. Members of the Roundtable include local and state land management agencies, non-governmental organizations, and community representatives. Through facilitated conversations, the Roundtable has developed a planning process to balance wildlife protection and habitat restoration with growing populations and recreation pressures. The full Roundtable and its subcommittees continue to meet regularly to assess current habitat conditions, identify data gaps and research needs, participate in public outreach and engagement efforts, and develop recommendations for projects that can advance their shared goals in Eagle County.",
+    "facilitators": ["Heather Bergman", "Samuel Wallace"]
+  },
+  {
+    "title": "Furbearer Management Stakeholder Engagement Process",
+    "image": "projects-furbearer.jpg",
+    "alt": "Furbearer Management Stakeholder Engagement Process",
+    "description": "Colorado Parks and Wildlife initiated a stakeholder engagement process to explore changes to the agency's management of furbearer species. CPW identified individuals to participate in two focus groups, one composed of agricultural producers and sportspersons, and another composed of animal welfare and wildlife conservation advocates. Through a series of separate and joint meetings, focus group members identified the underlying interests that motivate or inform their policy preferences, suggested policy ideas, and prioritized species for policy attention. Following the stakeholder engagement process, Peak Facilitation prepared and submitted recommendations for changes to furbearer management and policy to CPW staff for consideration. These were not consensus recommendations but rather ideas developed and revised based on stakeholder discussions, priorities, and concerns in an effort to balance the preferences and perspectives of both groups.",
+    "facilitators": ["Heather Bergman"]
+  },
+  {
+    "title": "Colorado Wild Horse Working Group",
+    "image": "projects-wildhorse.jpg",
+    "alt": "Colorado Wild Horse Working Group",
+    "description": "In 2023, the Colorado Legislature passed Senate Bill 23-275, establishing the Colorado Wild Horse Working Group and directing it to develop long-term solutions to the complex issue of wild horse management in the state. The Working Group included wild horse advocates, ranchers, environmentalists, on-range wild horse management entities, Tribal nations, sanctuaries, the Bureau of Land Management, and several departments of the State of Colorado. This diverse group explored state-level strategies to advance fertility control, training, adoption, and long-term care and stewardship of wild horses in Colorado. After 18 months of deliberations, the Working Group presented recommendations to the Colorado State Legislature and Governor Polis on actions to address these challenging issues and improve on- and off-range management of wild horses in the state.",
+    "facilitators": ["Heather Bergman"]
+  },
+  {
+    "title": "Bighorn and Domestic Sheep Working Group",
+    "image": "projects-bighorn.jpg",
+    "alt": "Bighorn and Domestic Sheep Working Group",
+    "description": "Colorado Parks and Wildlife, in collaboration with the US Forest Service and the Bureau of Land Management, convened the Bighorn and Domestic Sheep Working Group to address disease transmission between herds of bighorn and domestic sheep that co-occur on public lands in Colorado. Members of the Working Group included domestic sheep producers and industry groups, bighorn advocacy groups, environmental advocacy groups, and staff from various state and federal agencies. They explored pressing issues and policy opportunities to ensure the viability of both domestic sheep and bighorn herds in Colorado.",
+    "facilitators": ["Heather Bergman"]
+  },
+  {
+    "title": "Carson Partnership for Horse Management",
+    "image": "projects-carson-horse.jpg",
+    "alt": "Carson Partnership for Horse Management",
+    "description": "The Carson Partnership for Horse Management (CPHM) was convened to address the overpopulation of wild horses on the Jicarilla Wild Horse Territory in New Mexico. Federal and state agencies, wild horse advocates, ranchers, and other partners explored topics including grazing conditions, wildlife habitat, sustainable on-range water resources, and fertility control. The CPHM developed a management plan that set goals and proposed actions to manage the wild horse population and associated resource and infrastructure needs. Proposed actions included humane horse capture and transportation to a US Forest Service (USFS) facility, training CPHM members in fertility control darting to supplement USFS initiatives, restoring critical habitat, and repairing fences and water tanks across the range.",
+    "facilitators": ["Heather Bergman"]
+  },
+  {
+    "title": "Alaska Sheep and Goat Disease Working Group",
+    "image": "projects-alaska-sheep.jpg",
+    "alt": "Alaska Sheep and Goat Disease Working Group",
+    "description": "The Alaska Sheep and Goat Disease Working Group sought to find mutually agreeable solutions to protect Alaska's wild sheep and goats from disease transmission while minimizing impacts on domestic sheep producers and owners. The group included representatives from the Wild Sheep Foundation, domestic sheep producers and advocates, and additional stakeholders selected by the Alaska Farm Bureau and the Alaska Department of Fish and Game. During its three convenings, the group identified shared interests, discussed areas of agreement and disagreement related to science and data, and considered solutions to meet the goals of multiple stakeholders. While the group did not reach a final agreement, members' perspectives and key themes of the dialogue were presented to the Alaska Board of Game for consideration.",
+    "facilitators": ["Heather Bergman"]
+  }
+]

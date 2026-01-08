@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "heather",
+    "name": "Heather Bergman",
+    "title": "Senior Facilitator and President",
+    "image": "about-heather.jpg",
+    "alt": "Heather Bergman - Senior Facilitator and President of Peak Facililation Group",
+    "bio": [
+      "<p>Heather Bergman facilitates and mediates complex public policy deliberations on a variety of substantive issues, including water quality, water quantity, watershed protection and restoration, land use planning, and public lands management. These collaborative negotiations and discussions involve diverse stakeholders from federal and state agencies, local municipalities, advocacy organizations, ranchers, farmers, community residents, and the public at large.</p>",
+      "<p>Much of Heather&#39;s work portfolio focuses on high-conflict collaborative processes, and her strength is helping diverse and often opposing participants find common ground. Heather also has an extensive background in designing and managing retreats, workshops, and public outreach meetings for teams and organizations in need of a targeted process for achieving their goals. Heather uses humor to defuse tense situations, help participants feel at ease, move beyond initial barriers, and find consensus.</p>"
+    ]
+  },
+  {
+    "slug": "samuel",
+    "name": "Samuel Wallace",
+    "title": "Associate",
+    "image": "about-samuel.png",
+    "alt": "Samuel Wallace - Associate",
+    "bio": [
+      "<p>Samuel Wallace is an Associate at Peak Facilitation with a background in collaborative stakeholder engagement and public participation strategy, particularly as it relates to natural resource planning. At Peak, he works with clients to accurately write meeting summaries and provide logistical and informational support for groups such as the Forest Health Advisory Committee, the Front Range Roundtable, the Interbasin Compact Committee, and the South Platte River Urban Waters Partnership.</p>",
+      "<p>Throughout his academic and professional career, Samuel has sought to address complex environmental issues by using collaborative techniques. As an AmeriCorps VISTA Volunteer at Purgatoire Watershed Partnership, a watershed-focused non-profit located in southern Colorado, he worked with a multi-interest stakeholder group which included local municipalities, ranchers, development groups, federal and state agencies, recreationists, and conservationists to approach problems facing the watershed. Following this experience, he moved back to Denver where he is currently pursuing a MA in conflict resolution at the University of Denver. He earned his bachelor&#39;s degree at the University of Michigan in environmental studies and political science.</p>"
+    ]
+  },
+  {
+    "slug": "lauren",
+    "name": "Lauren Cortez French",
+    "title": "Associate",
+    "image": "about-lauren.jpg",
+    "alt": "Lauren Cortez French - Associate ",
+    "bio": [
+      "<p>As an Associate at Peak Facilitation, Lauren supports effective, outcome-based collaboration through clear and concise technical writing, comprehensive meeting planning, and intentional, prompt stakeholder communication. Lauren earned a B.S. in Biology and Environmental Science and Policy from the College of William &amp; Mary in 2022 and a master&#39;s degree from the University of Washington&#39;s School of Marine and Environmental Affairs in 2024. Through her coursework and previous work experience, she has developed a broad background in water, wildfire, and land use issues. Lauren strives to maintain momentum in the collaborative process by identifying points of connection between stakeholders, documenting key themes and decisions, ensuring actionable next steps are completed, and developing creative solutions to help stakeholders move past roadblocks.</p>"
+    ]
+  }
+]

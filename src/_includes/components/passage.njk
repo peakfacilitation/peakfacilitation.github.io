@@ -1,0 +1,7 @@
+<div class="passage{{ ' last' if last }}">
+                <div class="passage-photo"><img src="images/{{ project.image }}" width="280" height="194" alt="{{ project.alt }}" /></div>
+                <div class="passage-text">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description | safe }}{% if project.facilitators.length %} <em class="facilitator">Lead facilitator{{ 's' if project.facilitators.length > 1 }}: {{ project.facilitators | join(' and ') }}</em>{% endif %}</p>
+                </div>
+            </div>
