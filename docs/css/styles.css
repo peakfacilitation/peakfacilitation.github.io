@@ -494,8 +494,9 @@ body {
   line-height: 1.5;
   font-size: 15px;
   text-transform: none;
+  white-space: nowrap;
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   color: var(--color-peak-purple-light);
   transition: color 0.15s ease, background-color 0.15s ease;
 }
