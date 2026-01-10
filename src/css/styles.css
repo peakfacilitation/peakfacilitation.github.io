@@ -131,6 +131,32 @@ ol {
   padding-bottom: 20px;
 }
 
+/* Smooth menu hover transitions to prevent flashing */
+.menu-item {
+  transition: background-color 0.15s ease;
+}
+
+.menu-item a {
+  transition: color 0.15s ease;
+}
+
+.sub-item {
+  transition: opacity 0.15s ease;
+}
+
+.sub-item a {
+  transition: color 0.15s ease;
+}
+
+/* Prevent sub-menu flicker by adding slight delay on hide */
+.sub-menu {
+  transition: visibility 0s linear 0.1s;
+}
+
+.menu-item:hover .sub-menu {
+  transition-delay: 0s;
+}
+
 /* Background - preserve original sky texture */
 body {
   background-color: var(--color-peak-blue);

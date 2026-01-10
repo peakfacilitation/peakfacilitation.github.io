@@ -228,6 +228,24 @@ ul:not(#main-menu):not(.sub-menu), ol {
   padding-top: 15px;
   padding-bottom: 20px;
 }
+.menu-item {
+  transition: background-color 0.15s ease;
+}
+.menu-item a {
+  transition: color 0.15s ease;
+}
+.sub-item {
+  transition: opacity 0.15s ease;
+}
+.sub-item a {
+  transition: color 0.15s ease;
+}
+.sub-menu {
+  transition: visibility 0s linear 0.1s;
+}
+.menu-item:hover .sub-menu {
+  transition-delay: 0s;
+}
 body {
   background-color: var(--color-peak-blue);
   background-image: url(../../images/bg-med.jpg);
