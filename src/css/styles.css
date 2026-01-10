@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+/*
+ * Peak Facilitation Group - Custom Theme
+ * Tailwind CSS 4 CSS-first configuration
+ */
+@theme {
+  /* Purple palette */
+  --color-peak-purple: #502e7f;
+  --color-peak-purple-text: #4f2d7f;
+  --color-peak-purple-light: #9682b0;
+  --color-peak-purple-muted: #d3cbdf;
+
+  /* Green palette */
+  --color-peak-green: #b0c756;
+  --color-peak-green-dark: #9fbc2e;
+  --color-peak-green-light: #d2dea5;
+
+  /* Blue palette */
+  --color-peak-blue: #a0bce2;
+  --color-peak-blue-mid: #7d9abc;
+  --color-peak-blue-dark: #5582ab;
+  --color-peak-blue-nav: #608ab1;
+  --color-peak-blue-sky: #b4c3d8;
+
+  /* Neutral */
+  --color-peak-gray: #636466;
+  --color-peak-gray-light: #efefef;
+
+  /* Typography */
+  --font-peak-body: "Trebuchet MS", Verdana, Geneva, sans-serif;
+  --font-peak-heading: "Lucida Fax", Georgia, serif;
+  --font-peak-accent: Milo, sans-serif;
+
+  /* Layout */
+  --width-peak-container: 962px;
+}
+
+/* Background - preserve original sky texture */
+body {
+  background-color: var(--color-peak-blue);
+  background-image: url(../../images/bg-med.jpg);
+  background-position: -90px -90px;
+  background-attachment: fixed;
+}
+
+/* ============================================
+   RESPONSIVE OVERRIDES
+   These override peak.css for mobile devices
+   ============================================ */
+
+/* Mobile-first responsive container */
+@media (max-width: 1024px) {
+  body {
+    margin: 20px 0 !important;
+  }
+
+  #main-container {
+    width: 100% !important;
+    max-width: 962px !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+  }
+
+  #header,
+  #forward-container,
+  #stripe-container,
+  #content-container,
+  #footer {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Header/Navigation - responsive */
+@media (max-width: 768px) {
+  #header {
+    height: auto;
+    min-height: 80px;
+    padding: 10px;
+  }
+
+  h1#branding {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 200px;
+    height: 74px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h1#branding a {
+    width: 200px;
+    height: 74px;
+  }
+
+  #main-menu {
+    position: relative;
+    left: 0;
+    top: 10px;
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .menu-item {
+    float: none;
+    width: auto;
+    min-width: 80px;
+    padding: 0 10px;
+  }
+
+  .sub-menu {
+    position: relative;
+    width: 100%;
+  }
+
+  .menu-item:hover .sub-item,
+  .open .sub-item {
+    display: block;
+  }
+}
+
+/* Forward/Hero section - stack on mobile */
+@media (max-width: 768px) {
+  #forward-container {
+    height: auto !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  #forward-text {
+    float: none !important;
+    width: 100% !important;
+    margin: 20px 0 0 0 !important;
+  }
+
+  #forward-image {
+    float: none !important;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  #forward-image img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
+/* Stripe/Quote section */
+@media (max-width: 768px) {
+  #stripe-container {
+    height: auto;
+    padding: 15px;
+  }
+
+  #stripe-container p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #stripe-container p .quote {
+    font-size: 14px;
+  }
+}
+
+/* Content area - stack on mobile */
+@media (max-width: 768px) {
+  #content-container {
+    padding: 20px !important;
+  }
+
+  #content-container .lead-sidebar {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 0 20px 0 !important;
+    text-align: center;
+  }
+
+  #content-container .lead-sidebar img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  #content-container .content {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* Full article / About page bios */
+@media (max-width: 768px) {
+  .full-article {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .full-article img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #content-container .full-article .lead-sidebar {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .right-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Project passages - stack on mobile */
+@media (max-width: 768px) {
+  .passage {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .passage-text {
+    float: none;
+    width: 100%;
+  }
+
+  .passage:nth-child(odd) .passage-photo,
+  .passage:nth-child(even) .passage-photo {
+    float: none;
+    margin: 0 auto 20px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .passage h3 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+  #footer p {
+    margin-left: 20px;
+    text-align: center;
+  }
+}

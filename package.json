@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "Peak Facilitation Group website",
   "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
-    "clean": "rm -rf index.html about.html values.html testimonials.html 404.html projects-water.html projects-landfire.html projects-wildlife.html projects-retreats.html"
+    "build:css": "npx @tailwindcss/cli -i src/css/styles.css -o docs/css/styles.css",
+    "build:11ty": "eleventy",
+    "build": "npm run build:css && npm run build:11ty",
+    "watch:css": "npx @tailwindcss/cli -i src/css/styles.css -o docs/css/styles.css --watch",
+    "serve": "npm run build:css && eleventy --serve",
+    "clean": "rm -rf docs/*.html"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }

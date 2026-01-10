@@ -1,12 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<link rel="shortcut icon" href="/images/favico.png" />
-<link rel="apple-touch-icon" href="/images/favico.png" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/images/favico.png">
+<link rel="apple-touch-icon" href="/images/favico.png">
 <title>Peak Facilitation Group &gt; {{ title }}</title>
-<link rel="stylesheet" type="text/css" href="css/peak.css"{% if not page.url == '/' %} {% endif %}/>
+<link rel="stylesheet" href="css/peak.css">
+<link rel="stylesheet" href="css/styles.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.googleAnalyticsId }}"></script>
 <script>
@@ -46,7 +48,7 @@
         {{ forward.text | safe }}
         </div>
         <div id="forward-image">
-        	<img src="{{ forward.image }}" width="{{ forward.width | default(486) }}" height="{{ forward.height | default(266) }}" alt="{{ forward.alt }}" />
+        	<img src="{{ forward.image }}" width="{{ forward.width | default(486) }}" height="{{ forward.height | default(266) }}" alt="{{ forward.alt }}" loading="lazy">
         </div>
     </div>
 {% endif %}
