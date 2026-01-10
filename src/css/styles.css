@@ -73,7 +73,11 @@ ol {
   margin-bottom: 0;
 }
 
-/* Forward section paragraph - no margin needed */
+/* Forward section text - add breathing room at top while keeping image flush */
+#forward-text {
+  padding-top: 20px;
+}
+
 #forward-text p {
   margin: 0;
 }
@@ -94,8 +98,17 @@ ol {
 
 /* Full article / bio paragraphs - add vertical spacing */
 .full-article {
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 20px;
+}
+
+/* Lead sidebar image touches top edge, but text below gets margin */
+.full-article .lead-sidebar img {
+  margin-top: 0;
+}
+
+.full-article .lead-sidebar p {
+  margin-top: 15px;
 }
 
 .right-content {
