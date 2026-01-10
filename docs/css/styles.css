@@ -208,6 +208,12 @@ ul:not(#main-menu):not(.sub-menu), ol {
 .passage, .passage-photo, .passage-text {
   box-sizing: content-box;
 }
+.passage h3 {
+  margin-bottom: 0;
+}
+.passage p {
+  margin-top: 5px;
+}
 body {
   background-color: var(--color-peak-blue);
   background-image: url(../../images/bg-med.jpg);
