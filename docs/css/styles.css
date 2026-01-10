@@ -175,6 +175,30 @@
     outline-width: 1px;
   }
 }
+p {
+  margin: 1em 0;
+}
+ul, ol {
+  list-style: revert;
+  margin: 1em 0;
+  padding-left: 40px;
+}
+#stripe-container p {
+  margin-left: 62px;
+  margin-top: 15px;
+}
+#forward-text p {
+  margin: 0;
+}
+#content-container .content p, #content-container .lead-sidebar p {
+  margin: 0 0 1em 0;
+}
+.full-article p, .right-content p {
+  margin: 0 0 1em 0;
+}
+.passage p {
+  margin: 0 0 1em 0;
+}
 body {
   background-color: var(--color-peak-blue);
   background-image: url(../../images/bg-med.jpg);

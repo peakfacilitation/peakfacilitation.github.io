@@ -36,6 +36,52 @@
   --width-peak-container: 962px;
 }
 
+/* ============================================
+   RESTORE STYLES BROKEN BY TAILWIND RESET
+   Tailwind resets margin/padding to 0, but
+   peak.css relies on browser defaults
+   ============================================ */
+
+/* Restore paragraph margins */
+p {
+  margin: 1em 0;
+}
+
+/* Restore list styles */
+ul, ol {
+  list-style: revert;
+  margin: 1em 0;
+  padding-left: 40px;
+}
+
+/* Stripe vertical centering - restore original styles */
+#stripe-container p {
+  margin-left: 62px;
+  margin-top: 15px;
+}
+
+/* Forward section paragraph - restore margin */
+#forward-text p {
+  margin: 0;
+}
+
+/* Content paragraphs */
+#content-container .content p,
+#content-container .lead-sidebar p {
+  margin: 0 0 1em 0;
+}
+
+/* Full article paragraphs */
+.full-article p,
+.right-content p {
+  margin: 0 0 1em 0;
+}
+
+/* Passage text */
+.passage p {
+  margin: 0 0 1em 0;
+}
+
 /* Background - preserve original sky texture */
 body {
   background-color: var(--color-peak-blue);
