@@ -516,23 +516,22 @@ body {
   white-space: nowrap;
   width: auto;
   margin: 0;
-  padding: 0.625rem 1.5rem;
+  padding: 0;
   color: var(--color-peak-purple-light);
-  transition: color 0.15s ease, background-color 0.15s ease;
+  transition: background-color 0.15s ease;
 }
 .sub-item a {
   display: block;
   margin: 0;
+  padding: 0.625rem 1.5rem;
   font-size: 15px;
   line-height: 1.5;
   color: var(--color-peak-purple-light);
   text-decoration: none;
-  transition: color 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease;
 }
-.sub-item:hover, .menu-item:hover .sub-item:hover {
+.sub-item a:hover {
   background-color: var(--color-peak-gray-light);
-}
-.sub-item:hover a, .sub-item a:hover, .menu-item:hover .sub-item:hover a, .menu-item:hover .sub-item a:hover {
   color: var(--color-peak-purple);
 }
 .sub-item.selected a, .menu-item.open .sub-item.selected a {
