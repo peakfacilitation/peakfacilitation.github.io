@@ -490,15 +490,17 @@ body {
 }
 
 /* Reset sub-items */
-.sub-item {
+.sub-item,
+.contact li {
   display: block;
   height: auto;
   line-height: 1.5;
   font-size: 15px;
   text-transform: none;
   white-space: nowrap;
+  width: auto;
   margin: 0;
-  padding: 0.5rem 1.5rem;
+  padding: 0.625rem 1.5rem;
   color: var(--color-peak-purple-light);
   transition: color 0.15s ease, background-color 0.15s ease;
 }
