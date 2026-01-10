@@ -421,6 +421,14 @@ body {
     text-align: center;
   }
 }
+body {
+  font-size: 16px;
+  line-height: 1.65;
+}
+#content-container .content, #content-container .full-article, .passage, .passage p {
+  font-size: 16px;
+  line-height: 1.65;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;

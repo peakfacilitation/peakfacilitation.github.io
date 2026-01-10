@@ -11,10 +11,10 @@
   --color-peak-purple-light: #9682b0;
   --color-peak-purple-muted: #d3cbdf;
 
-  /* Green palette */
-  --color-peak-green: #b0c756;
-  --color-peak-green-dark: #9fbc2e;
-  --color-peak-green-light: #d2dea5;
+  /* Green palette - softer sage/olive tones */
+  --color-peak-green: #8fa65d;
+  --color-peak-green-dark: #7a9150;
+  --color-peak-green-light: #c5d4a8;
 
   /* Blue palette */
   --color-peak-blue: #a0bce2;
@@ -24,11 +24,11 @@
   --color-peak-blue-sky: #b4c3d8;
 
   /* Neutral */
-  --color-peak-gray: #636466;
+  --color-peak-gray: #4a4a4a;
   --color-peak-gray-light: #efefef;
 
   /* Typography */
-  --font-peak-body: "Trebuchet MS", Verdana, Geneva, sans-serif;
+  --font-peak-body: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-peak-heading: "Lucida Fax", Georgia, serif;
   --font-peak-accent: Milo, sans-serif;
 
@@ -382,4 +382,24 @@ body {
     margin-left: 20px;
     text-align: center;
   }
+}
+
+/* ============================================
+   TYPOGRAPHY REFRESH
+   Override peak.css defaults for improved readability
+   ============================================ */
+
+/* Base body typography */
+body {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Content areas - specific enough to beat peak.css */
+#content-container .content,
+#content-container .full-article,
+.passage,
+.passage p {
+  font-size: 16px;
+  line-height: 1.65;
 }
