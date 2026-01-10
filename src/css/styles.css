@@ -148,13 +148,17 @@ ol {
   transition: color 0.15s ease;
 }
 
-/* Prevent sub-menu flicker by adding slight delay on hide */
-.sub-menu {
-  transition: visibility 0s linear 0.1s;
-}
-
-.menu-item:hover .sub-menu {
-  transition-delay: 0s;
+/* Bridge the gap between menu tab and dropdown to prevent hover loss.
+   The sub-menu has padding-top: 12px which creates a gap. This pseudo-element
+   fills that gap so hover state is maintained when moving to dropdown. */
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  background: transparent;
 }
 
 /* Background - preserve original sky texture */

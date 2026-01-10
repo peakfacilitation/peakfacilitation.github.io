@@ -240,11 +240,14 @@ ul:not(#main-menu):not(.sub-menu), ol {
 .sub-item a {
   transition: color 0.15s ease;
 }
-.sub-menu {
-  transition: visibility 0s linear 0.1s;
-}
-.menu-item:hover .sub-menu {
-  transition-delay: 0s;
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  background: transparent;
 }
 body {
   background-color: var(--color-peak-blue);
