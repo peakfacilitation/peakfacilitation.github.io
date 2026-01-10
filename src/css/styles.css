@@ -391,8 +391,8 @@ body {
   position: absolute;
   right: 40px;
   left: auto;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  transform: none;
   float: none;
   display: flex;
   gap: 2rem;
