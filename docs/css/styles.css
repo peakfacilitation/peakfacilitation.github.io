@@ -193,6 +193,10 @@ ul:not(#main-menu):not(.sub-menu), ol {
   margin-top: 0;
   margin-bottom: 0;
 }
+#forward-container {
+  height: auto;
+  min-height: 290px;
+}
 #forward-text {
   padding-top: 20px;
   padding-bottom: 20px;

@@ -73,6 +73,12 @@ ol {
   margin-bottom: 0;
 }
 
+/* Forward section - override fixed height to allow content-based sizing */
+#forward-container {
+  height: auto;
+  min-height: 290px;
+}
+
 /* Forward section text - add breathing room at top/bottom while keeping image flush */
 #forward-text {
   padding-top: 20px;
