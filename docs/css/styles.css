@@ -195,6 +195,7 @@ ul:not(#main-menu):not(.sub-menu), ol {
 }
 #forward-text {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 #forward-text p {
   margin: 0;
@@ -217,6 +218,9 @@ ul:not(#main-menu):not(.sub-menu), ol {
 }
 .full-article .lead-sidebar p {
   margin-top: 15px;
+}
+.full-article > p {
+  margin-bottom: 1.5em;
 }
 .right-content {
   padding-top: 10px;

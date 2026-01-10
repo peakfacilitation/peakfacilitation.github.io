@@ -73,9 +73,10 @@ ol {
   margin-bottom: 0;
 }
 
-/* Forward section text - add breathing room at top while keeping image flush */
+/* Forward section text - add breathing room at top/bottom while keeping image flush */
 #forward-text {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #forward-text p {
@@ -109,6 +110,11 @@ ol {
 
 .full-article .lead-sidebar p {
   margin-top: 15px;
+}
+
+/* Testimonial spacing - each testimonial needs vertical separation */
+.full-article > p {
+  margin-bottom: 1.5em;
 }
 
 .right-content {
