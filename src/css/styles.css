@@ -78,7 +78,12 @@ ol {
   margin: 0;
 }
 
-/* Content paragraphs - restore bottom margin for spacing */
+/* Content area - add vertical breathing room for text on white bg.
+   Images stay adjacent to dividers, but text needs space. */
+#content-container .content {
+  padding-top: 25px;
+}
+
 #content-container .content p {
   margin: 0 0 1em 0;
 }
@@ -87,7 +92,16 @@ ol {
   margin: 15px 0 0 0;
 }
 
-/* Full article / bio paragraphs */
+/* Full article / bio paragraphs - add vertical spacing */
+.full-article {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.right-content {
+  padding-top: 10px;
+}
+
 .right-content p {
   margin: 0 0 1em 0;
 }
@@ -109,6 +123,12 @@ ol {
 
 .passage p {
   margin-top: 5px;
+}
+
+/* Add vertical padding to passage text area */
+.passage-text {
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 /* Background - preserve original sky texture */

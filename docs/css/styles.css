@@ -196,11 +196,21 @@ ul:not(#main-menu):not(.sub-menu), ol {
 #forward-text p {
   margin: 0;
 }
+#content-container .content {
+  padding-top: 25px;
+}
 #content-container .content p {
   margin: 0 0 1em 0;
 }
 #content-container .lead-sidebar p {
   margin: 15px 0 0 0;
+}
+.full-article {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.right-content {
+  padding-top: 10px;
 }
 .right-content p {
   margin: 0 0 1em 0;
@@ -213,6 +223,10 @@ ul:not(#main-menu):not(.sub-menu), ol {
 }
 .passage p {
   margin-top: 5px;
+}
+.passage-text {
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 body {
   background-color: var(--color-peak-blue);
