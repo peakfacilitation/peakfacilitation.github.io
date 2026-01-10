@@ -42,44 +42,63 @@
    peak.css relies on browser defaults
    ============================================ */
 
-/* Restore paragraph margins */
-p {
-  margin: 1em 0;
-}
-
 /* Restore list styles */
-ul, ol {
+ul:not(#main-menu):not(.sub-menu),
+ol {
   list-style: revert;
   margin: 1em 0;
   padding-left: 40px;
 }
 
-/* Stripe vertical centering - restore original styles */
-#stripe-container p {
-  margin-left: 62px;
-  margin-top: 15px;
+/* CRITICAL: Undo Tailwind's image reset for floated layout images.
+   Tailwind sets img { display: block; max-width: 100%; height: auto; }
+   which breaks float layouts that need explicit widths. */
+.passage img,
+#forward-image img,
+#content-container .lead-sidebar img,
+.full-article img {
+  display: inline;
+  max-width: none;
 }
 
-/* Forward section paragraph - restore margin */
+/* Stripe - restore vertical centering */
+#stripe-container {
+  display: flex;
+  align-items: center;
+}
+
+#stripe-container p {
+  margin-left: 62px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Forward section paragraph - no margin needed */
 #forward-text p {
   margin: 0;
 }
 
-/* Content paragraphs */
-#content-container .content p,
-#content-container .lead-sidebar p {
+/* Content paragraphs - restore bottom margin for spacing */
+#content-container .content p {
   margin: 0 0 1em 0;
 }
 
-/* Full article paragraphs */
-.full-article p,
+#content-container .lead-sidebar p {
+  margin: 15px 0 0 0;
+}
+
+/* Full article / bio paragraphs */
 .right-content p {
   margin: 0 0 1em 0;
 }
 
-/* Passage text */
-.passage p {
-  margin: 0 0 1em 0;
+/* Passage - restore content-box sizing that peak.css expects.
+   Tailwind sets border-box which makes width include padding,
+   breaking the float layout calculations. */
+.passage,
+.passage-photo,
+.passage-text {
+  box-sizing: content-box;
 }
 
 /* Background - preserve original sky texture */
