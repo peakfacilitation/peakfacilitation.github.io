@@ -73,6 +73,27 @@ ol {
   margin-bottom: 0;
 }
 
+/* Page title bar - shows current page name */
+#page-title-bar {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  background-color: var(--color-peak-purple);
+  padding: 0.75rem 70px;
+}
+
+#page-title-bar h2 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-peak-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Forward section - override fixed height to allow content-based sizing */
 #forward-container {
   height: auto;

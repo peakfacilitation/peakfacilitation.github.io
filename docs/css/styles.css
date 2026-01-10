@@ -14,6 +14,7 @@
     --color-peak-blue: #a0bce2;
     --color-peak-blue-nav: #608ab1;
     --color-peak-gray-light: #efefef;
+    --font-peak-body: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
   }
 }
 @layer base {
@@ -196,6 +197,24 @@ ul:not(#main-menu):not(.sub-menu), ol {
   margin-left: 62px;
   margin-top: 0;
   margin-bottom: 0;
+}
+#page-title-bar {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 100%;
+  background-color: var(--color-peak-purple);
+  padding: 0.75rem 70px;
+}
+#page-title-bar h2 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-peak-body);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 #forward-container {
   height: auto;
