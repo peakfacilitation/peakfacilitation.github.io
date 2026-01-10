@@ -156,35 +156,7 @@ ol {
   padding-bottom: 20px;
 }
 
-/* Smooth menu hover transitions to prevent flashing */
-.menu-item {
-  transition: background-color 0.15s ease;
-}
-
-.menu-item a {
-  transition: color 0.15s ease;
-}
-
-.sub-item {
-  transition: opacity 0.15s ease;
-}
-
-.sub-item a {
-  transition: color 0.15s ease;
-}
-
-/* Bridge the gap between menu tab and dropdown to prevent hover loss.
-   The sub-menu has padding-top: 12px which creates a gap. This pseudo-element
-   fills that gap so hover state is maintained when moving to dropdown. */
-.sub-menu::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 100%;
-  height: 17px;
-  background: transparent;
-}
+/* Note: Menu transitions are now defined in the DESKTOP NAV RESET section below */
 
 /* Background - preserve original sky texture */
 body {
@@ -407,6 +379,140 @@ body {
     margin-left: 20px;
     text-align: center;
   }
+}
+
+/* ============================================
+   DESKTOP NAV RESET - Neutralize peak.css nav styles
+   Allows Tailwind utilities to control nav appearance
+   ============================================ */
+
+/* Reset menu container */
+#main-menu {
+  position: absolute;
+  right: 40px;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  float: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Reset menu items - remove tab box styling */
+.menu-item {
+  position: relative;
+  float: none;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  background-color: transparent;
+  border-radius: 0;
+  text-transform: uppercase;
+  margin-left: 0;
+}
+
+/* Reset menu item links */
+.menu-item > a {
+  display: block;
+  padding: 0.5rem 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  color: var(--color-peak-blue-nav);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover state - purple text instead of background change */
+.menu-item:hover {
+  background-color: transparent;
+}
+
+.menu-item:hover > a {
+  color: var(--color-peak-purple);
+}
+
+/* Open state (active parent) - subtle underline */
+.menu-item.open > a {
+  color: var(--color-peak-purple);
+  border-bottom: 2px solid var(--color-peak-purple);
+}
+
+/* Reset dropdown - clean white card style */
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 12rem;
+  padding: 0.75rem 0;
+  margin: 0;
+  list-style: none;
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* Show dropdown on hover or when open */
+.menu-item:hover .sub-menu,
+.menu-item.open .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Reset sub-items */
+.sub-item {
+  display: block;
+  height: auto;
+  line-height: 1.5;
+  font-size: 15px;
+  text-transform: none;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: var(--color-peak-purple-light);
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.sub-item a {
+  display: block;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-peak-purple-light);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+/* Sub-item hover */
+.sub-item:hover,
+.menu-item:hover .sub-item:hover {
+  background-color: var(--color-peak-gray-light);
+}
+
+.sub-item:hover a,
+.sub-item a:hover,
+.menu-item:hover .sub-item:hover a,
+.menu-item:hover .sub-item a:hover {
+  color: var(--color-peak-purple);
+}
+
+/* Selected sub-item (current page) */
+.sub-item.selected a,
+.menu-item.open .sub-item.selected a {
+  color: var(--color-peak-purple);
+  font-weight: 600;
+}
+
+/* Remove the gap bridge pseudo-element - no longer needed */
+.sub-menu::before {
+  display: none;
 }
 
 /* ============================================
