@@ -534,6 +534,12 @@ body {
   display: none;
 }
 
+/* Right-align contact dropdown to prevent overflow */
+.menu-item.contact .sub-menu {
+  left: auto;
+  right: 0;
+}
+
 /* ============================================
    TYPOGRAPHY REFRESH
    Override peak.css defaults for improved readability
