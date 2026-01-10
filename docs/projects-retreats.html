@@ -22,34 +22,37 @@
 <body>
 <div id="main-container">
 
-	<div id="header">
+	<div id="header" class="relative">
     	<h1 id="branding"><a href="index.html">Peak Facilitation Group</a></h1>
-    	<ul id="main-menu">
-        	<li class="menu-item"><a href="index.html">Home</a>
-</li>
-        	<li class="menu-item"><a href="about.html">About</a>
-            	<ul class="sub-menu">
-                	<li class="sub-item"><a href="about.html">Background</a></li>
-                	<li class="sub-item"><a href="values.html">Values</a></li>
-                	<li class="sub-item"><a href="testimonials.html">Testimonials</a></li>
+    	<nav id="main-menu" class="absolute right-10 top-5 flex gap-8 list-none m-0 p-0">
+        	<li class="group relative">
+				<a href="index.html" class="block py-2 text-lg uppercase text-peak-blue-nav hover:text-peak-purple transition-colors duration-200 no-underline ">Home</a>
+			</li>
+        	<li class="group relative">
+				<a href="about.html" class="block py-2 text-lg uppercase text-peak-blue-nav hover:text-peak-purple transition-colors duration-200 no-underline ">About</a>
+            	<ul class="sub-menu absolute top-full left-0 min-w-48 py-3 m-0 list-none bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                	<li class="m-0 p-0"><a href="about.html" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 ">Background</a></li>
+                	<li class="m-0 p-0"><a href="values.html" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 ">Values</a></li>
+                	<li class="m-0 p-0"><a href="testimonials.html" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 ">Testimonials</a></li>
                 </ul>
-                </li>
-        	<li class="menu-item open"><a href="projects-water.html">Projects</a>
-            	<ul class="sub-menu">
-                	<li class="sub-item"><a href="projects-water.html">Water</a></li>
-                	<li class="sub-item"><a href="projects-landfire.html">Land & Fire</a></li>
-                	<li class="sub-item"><a href="projects-wildlife.html">Animals & Wildlife</a></li>
-                	<li class="sub-item selected"><a href="projects-retreats.html">Retreats</a></li>
+			</li>
+        	<li class="group relative is-active">
+				<a href="projects-water.html" class="block py-2 text-lg uppercase text-peak-blue-nav hover:text-peak-purple transition-colors duration-200 no-underline text-peak-purple border-b-2 border-peak-purple">Projects</a>
+            	<ul class="sub-menu absolute top-full left-0 min-w-48 py-3 m-0 list-none bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                	<li class="m-0 p-0"><a href="projects-water.html" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 ">Water</a></li>
+                	<li class="m-0 p-0"><a href="projects-landfire.html" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 ">Land & Fire</a></li>
+                	<li class="m-0 p-0"><a href="projects-wildlife.html" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 ">Animals & Wildlife</a></li>
+                	<li class="m-0 p-0"><a href="projects-retreats.html" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 text-peak-purple font-semibold">Retreats</a></li>
                 </ul>
-                </li>
-        	<li class="menu-item contact"><a href="#contact">Contact</a>
-            	<ul class="sub-menu">
-                	<li class="sub-item">Call 720 299 8796</li>
-                	<li class="sub-item"><a href="mailto:heather@peakfacilitation.com">Send Peak an Email</a></li>
+			</li>
+        	<li class="group relative contact">
+				<a href="#contact" class="block py-2 text-lg uppercase text-peak-blue-nav hover:text-peak-purple transition-colors duration-200 no-underline ">Contact</a>
+            	<ul class="sub-menu absolute top-full right-0 min-w-48 py-3 m-0 list-none bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                	<li class="m-0 p-0"><span class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light">Call 720 299 8796</span></li>
+                	<li class="m-0 p-0"><a href="mailto:heather@peakfacilitation.com" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 ">Send Peak an Email</a></li>
                 </ul>
-                </li>
-            </li>
-        </ul>
+			</li>
+        </nav>
     </div>
 
 

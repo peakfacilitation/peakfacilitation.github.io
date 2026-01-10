@@ -22,24 +22,22 @@
 <body>
 <div id="main-container">
 
-	<div id="header">
+	<div id="header" class="relative">
     	<h1 id="branding"><a href="index.html">Peak Facilitation Group</a></h1>
-    	<ul id="main-menu">
+    	<nav id="main-menu" class="absolute right-10 top-5 flex gap-8 list-none m-0 p-0">
 {%- for item in navigation.main %}
-        	<li class="menu-item{% if item.class %} {{ item.class }}{% endif %}{% if menuParent == item.label %} open{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a>
+        	<li class="group relative{% if item.class %} {{ item.class }}{% endif %}{% if menuParent == item.label %} is-active{% endif %}">
+				<a href="{{ item.url }}" class="block py-2 text-lg uppercase text-peak-blue-nav hover:text-peak-purple transition-colors duration-200 no-underline {% if menuParent == item.label %}text-peak-purple border-b-2 border-peak-purple{% endif %}">{{ item.label }}</a>
 {%- if item.children %}
-            	<ul class="sub-menu">
+            	<ul class="sub-menu absolute top-full {% if item.class == 'contact' %}right-0{% else %}left-0{% endif %} min-w-48 py-3 m-0 list-none bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
 {%- for child in item.children %}
-                	<li class="sub-item{% if menuItem == child.label %} selected{% endif %}">{% if child.url %}<a href="{{ child.url }}">{{ child.label | safe }}</a>{% else %}{{ child.label }}{% endif %}</li>
+                	<li class="m-0 p-0">{% if child.url %}<a href="{{ child.url }}" class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light hover:text-peak-purple hover:bg-peak-gray-light no-underline transition-colors duration-150 {% if menuItem == child.label %}text-peak-purple font-semibold{% endif %}">{{ child.label | safe }}</a>{% else %}<span class="block px-6 py-2.5 text-[15px] leading-normal whitespace-nowrap text-peak-purple-light">{{ child.label }}</span>{% endif %}</li>
 {%- endfor %}
                 </ul>
-                </li>
-{%- else %}
-</li>
 {%- endif %}
+			</li>
 {%- endfor %}
-            </li>
-        </ul>
+        </nav>
     </div>
 
 {% if title != "Home" %}

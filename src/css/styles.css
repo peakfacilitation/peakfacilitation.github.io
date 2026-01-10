@@ -403,141 +403,20 @@ body {
 }
 
 /* ============================================
-   DESKTOP NAV RESET - Neutralize peak.css nav styles
-   Allows Tailwind utilities to control nav appearance
+   NAV RESET - Neutralize peak.css nav styles
+   Tailwind utilities in template handle all styling
    ============================================ */
 
-/* Reset menu container */
-#main-menu {
-  position: absolute;
-  right: 40px;
-  left: auto;
-  top: 20px;
-  transform: none;
-  float: none;
-  display: flex;
-  gap: 2rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-/* Reset menu items - remove tab box styling */
-.menu-item {
-  position: relative;
-  float: none;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  line-height: normal;
-  background-color: transparent;
-  border-radius: 0;
-  text-transform: uppercase;
-  margin-left: 0;
-}
-
-/* Reset menu item links */
-.menu-item > a {
-  display: block;
-  padding: 0.5rem 0;
-  margin: 0;
-  width: auto;
-  height: auto;
-  font-size: 18px;
-  color: var(--color-peak-blue-nav);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-/* Hover state - purple text instead of background change */
+/* Neutralize peak.css menu-item background/hover */
+.menu-item,
 .menu-item:hover {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
-.menu-item:hover > a {
-  color: var(--color-peak-purple);
-}
-
-/* Open state (active parent) - subtle underline */
-.menu-item.open > a {
-  color: var(--color-peak-purple);
-  border-bottom: 2px solid var(--color-peak-purple);
-}
-
-/* Reset dropdown - clean white card style */
-.sub-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 100;
-  min-width: 12rem;
-  padding: 0.75rem 0;
-  margin: 0;
-  list-style: none;
-  background-color: white;
-  border-radius: 0.375rem;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
-}
-
-/* Show dropdown on hover only (not .open - that just marks current section) */
-.menu-item:hover .sub-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Reset sub-items - move padding to link for proper hover alignment */
-.sub-item,
+/* Neutralize peak.css contact li width/margin */
 .contact li {
-  display: block;
-  height: auto;
-  line-height: 1.5;
-  font-size: 15px;
-  text-transform: none;
-  white-space: nowrap;
   width: auto;
-  margin: 0;
-  padding: 0;
-  color: var(--color-peak-purple-light);
-  transition: background-color 0.15s ease;
-}
-
-.sub-item a {
-  display: block;
-  margin: 0;
-  padding: 0.625rem 1.5rem;
-  font-size: 15px;
-  line-height: 1.5;
-  color: var(--color-peak-purple-light);
-  text-decoration: none;
-  transition: color 0.15s ease, background-color 0.15s ease;
-}
-
-/* Sub-item hover - apply to link for proper alignment */
-.sub-item a:hover {
-  background-color: var(--color-peak-gray-light);
-  color: var(--color-peak-purple);
-}
-
-/* Selected sub-item (current page) */
-.sub-item.selected a,
-.menu-item.open .sub-item.selected a {
-  color: var(--color-peak-purple);
-  font-weight: 600;
-}
-
-/* Remove the gap bridge pseudo-element - no longer needed */
-.sub-menu::before {
-  display: none;
-}
-
-/* Right-align contact dropdown to prevent overflow */
-.menu-item.contact .sub-menu {
-  left: auto;
-  right: 0;
+  margin-left: 0;
 }
 
 /* ============================================
