@@ -391,7 +391,7 @@ body {
   position: absolute;
   right: 40px;
   left: auto;
-  top: 0;
+  top: 20px;
   transform: none;
   float: none;
   display: flex;
@@ -461,9 +461,8 @@ body {
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
-/* Show dropdown on hover or when open */
-.menu-item:hover .sub-menu,
-.menu-item.open .sub-menu {
+/* Show dropdown on hover only (not .open - that just marks current section) */
+.menu-item:hover .sub-menu {
   opacity: 1;
   visibility: visible;
 }
