@@ -74,7 +74,7 @@ section{padding-block:52px}
 
 /* Layered sheets */
 .tabs{display:flex;gap:6px;flex-wrap:wrap;position:relative;z-index:2}
-.tab{font:inherit;cursor:pointer;border:1px solid var(--line);border-bottom:none;background:var(--paper);color:var(--muted);padding:10px 16px 12px;border-radius:12px 12px 0 0;text-align:left;display:grid;gap:2px;min-width:0}
+.tab{font:inherit;cursor:pointer;border:1px solid var(--line);border-bottom:none;background:var(--paper);color:var(--muted);padding:10px 16px 12px;border-radius:12px 12px 0 0;text-align:left;display:grid;gap:2px;align-content:start;min-width:0}
 .tab .n{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 .tab .t{font-weight:700;font-size:1rem}
 .tab[aria-selected="true"]{background:var(--sheet);color:var(--purple-dark);box-shadow:0 -3px 0 var(--sheet)}
@@ -135,8 +135,10 @@ footer{padding-block:8px 48px;max-width:1000px;margin:0 auto;color:var(--muted);
   .sheet-top{grid-template-columns:minmax(0,1fr)}
   .reads{justify-self:start;white-space:normal}
   .call{padding:28px}
-  .tab{padding:8px 12px 10px;flex:1 1 0}
-  .tab .t{font-size:.9rem}
+  /* Tabs size to their labels; long words hyphenate only on the narrowest phones. */
+  .tabs{display:grid;grid-template-columns:repeat(3,auto)}
+  .tab{padding:8px 10px 10px;-webkit-hyphens:auto;hyphens:auto}
+  .tab .t{font-size:.9rem;line-height:1.25}
   .stack::before{transform:translate(8px,8px)}
   .stack::after{transform:translate(4px,4px)}
   .kpi{grid-template-columns:minmax(0,1fr)}
