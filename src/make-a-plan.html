@@ -7,7 +7,7 @@ permalink: make-a-plan.html
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>You scanned my bag! · Peak Facilitation Group</title>
-<meta name="description" content="Strategic planning with Peak Facilitation Group. Three ways to shape a plan, and a 15-minute call to talk about yours.">
+<meta name="description" content="Strategic planning with Peak Facilitation Group, and a 15-minute call to talk about yours.">
 <!-- Landing page for the luggage-tag QR code. Deliberately not linked from the rest of the site. -->
 <meta name="robots" content="noindex">
 <!-- Link previews in chat and social apps -->
@@ -15,7 +15,7 @@ permalink: make-a-plan.html
 <meta property="og:site_name" content="Peak Facilitation Group">
 <meta property="og:url" content="https://peakfacilitation.com/make-a-plan">
 <meta property="og:title" content="Hope is not a strategy.">
-<meta property="og:description" content="Don’t wing it. Make a strategic plan. Peak Facilitation Group helps boards, agencies, and organizations agree on where they’re headed and build a plan people will actually use.">
+<meta property="og:description" content="Don’t wing it. Make a strategic plan. Peak Facilitation Group helps boards, teams, and other groups agree on where they are headed and build a plan to get there.">
 <meta property="og:image" content="https://peakfacilitation.com/images/og-make-a-plan.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -36,7 +36,7 @@ permalink: make-a-plan.html
 @font-face { font-family:"Source Sans 3"; src:url(fonts/source-sans-3-latin.woff2) format("woff2"); font-weight:200 900; font-style:normal; font-display:swap; }
 :root{
   --purple:#50396b; --purple-dark:#382847; --green:#e1e8d8; --green-bright:#c6d5af;
-  --ink:#36413e; --muted:#626761; --paper:#fcfcf9; --sheet:#fff; --line:#d6dbd2; --sky:#4f7fae;
+  --ink:#36413e; --muted:#626761; --paper:#fcfcf9; --line:#d6dbd2;
   --serif:"Source Serif 4", Georgia, serif; --sans:"Source Sans 3", system-ui, sans-serif;
   color-scheme:light;
 }
@@ -73,60 +73,27 @@ a{color:var(--purple)}
 
 /* Idea strip: the tag's sage band */
 .idea{background:var(--green);margin-top:-1px;padding-block:8px 48px}
-.idea .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}
-.idea blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,2.8vw,1.8rem);line-height:1.3;color:var(--purple-dark)}
+.idea .wrap{display:grid;justify-items:center;text-align:center}
+.idea blockquote{margin:0;max-width:34ch;font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,2.8vw,1.8rem);line-height:1.3;color:var(--purple-dark)}
 
 section{padding-block:52px}
 .section-head{display:grid;gap:10px;max-width:640px;margin-bottom:28px}
 .section-head h2{font-size:clamp(1.8rem,3.6vw,2.4rem)}
 .section-head p{color:var(--muted)}
 
-/* Building blocks */
-.blocks{display:flex;flex-wrap:wrap;gap:10px}
-.chip{font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:8px;background:var(--sheet);border:1px solid var(--line);color:var(--purple-dark)}
-.blocks-note{margin-top:18px;color:var(--muted);max-width:60ch}
-
-/* Layered sheets */
-.tabs{display:flex;gap:6px;flex-wrap:wrap;position:relative;z-index:2}
-.tab{font:inherit;cursor:pointer;border:1px solid var(--line);border-bottom:none;background:var(--paper);color:var(--muted);padding:10px 16px 12px;border-radius:12px 12px 0 0;text-align:left;display:grid;gap:2px;align-content:start;min-width:0}
-.tab .n{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-.tab .t{font-weight:700;font-size:1rem}
-.tab[aria-selected="true"]{background:var(--sheet);color:var(--purple-dark);box-shadow:0 -3px 0 var(--sheet)}
-.tab[aria-selected="true"] .n{color:var(--purple)}
-.stack{position:relative}
-.stack::before,.stack::after{content:"";position:absolute;inset:0;border:1px solid var(--line);border-radius:0 14px 14px 14px;background:var(--sheet)}
-.stack::before{transform:translate(14px,14px)}
-.stack::after{transform:translate(7px,7px)}
-.sheet{position:relative;z-index:1;background:var(--sheet);border:1px solid var(--line);border-radius:0 14px 14px 14px;padding:32px;display:grid;gap:26px;box-shadow:0 18px 40px -30px #38284780}
-.sheet-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:start}
-.sheet-top h3{font-size:clamp(1.7rem,3.4vw,2.2rem)}
-.sheet-top .sub{color:var(--muted);margin-top:6px;max-width:52ch}
-.reads{font-size:.8rem;font-weight:600;background:var(--green);color:var(--purple-dark);padding:6px 10px;border-radius:6px;white-space:nowrap}
-.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:28px}
-.ladder{display:grid;gap:8px;list-style:none;margin:0;padding:0}
-.ladder li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;padding:10px 12px;border-radius:8px;background:#f1f4ec}
-.ladder li.off{background:transparent;border:1px dashed var(--line);color:var(--muted)}
-.ladder .dot{width:10px;height:10px;border-radius:50%;background:var(--purple)}
-.ladder li.off .dot{background:transparent;border:2px solid var(--line)}
-.ladder b{font-weight:700;color:var(--purple-dark)}
-.ladder li.off b{color:var(--muted)}
-.ladder small{display:block;color:var(--muted);font-size:.85rem}
-.ruler svg{width:100%;height:auto;display:block;margin-top:6px}
-.ruler .axis{stroke:var(--line);stroke-width:2}
-.ruler .span{stroke:var(--purple);stroke-width:8;stroke-linecap:round}
-.ruler .span.vision{stroke:var(--sky)}
-.ruler text{fill:var(--muted);font-family:var(--sans);font-size:12px;font-weight:600}
-.ruler .tick{stroke:var(--muted);stroke-width:1.5}
-.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.82rem;color:var(--muted);margin-top:6px}
-.legend i{display:inline-block;width:18px;height:6px;border-radius:3px;vertical-align:middle;margin-right:6px}
-.sample{border-left:3px solid var(--green-bright);padding:4px 0 4px 18px;display:grid;gap:10px}
-.sample .quote{font-family:var(--serif);font-size:1.2rem;line-height:1.4;color:var(--purple-dark)}
-.kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;font-variant-numeric:tabular-nums}
-.kpi div{background:#f1f4ec;border-radius:8px;padding:10px;display:grid;gap:2px}
-.kpi strong{font-size:1.1rem;color:var(--purple-dark);line-height:1.2}
-.kpi span{font-size:.78rem;color:var(--muted)}
-.best{display:grid;grid-template-columns:auto 1fr;gap:12px;padding-top:18px;border-top:1px solid var(--line)}
-.best .label{padding-top:5px}
+/* Fan of sample plan pages */
+main{overflow-x:clip} /* rotated outer pages must never cause sideways scroll on phones */
+.fan{display:flex;justify-content:center;padding:24px 0 8px}
+.fan a{display:block;width:min(36%,310px);margin-inline:-6%;transform-origin:50% 115%}
+.fan a:nth-child(1){transform:rotate(-8deg) translateY(14px)}
+.fan a:nth-child(2){position:relative;z-index:2}
+.fan a:nth-child(3){transform:rotate(8deg) translateY(14px)}
+/* Lift the image, not the link: moving the link out from under the pointer made hover flicker. */
+.fan a:hover,.fan a:focus-visible{position:relative;z-index:3}
+.fan a:hover img,.fan a:focus-visible img{transform:translateY(-12px)}
+.fan a:focus-visible{outline:none}
+.fan a:focus-visible img{outline:3px solid var(--purple);outline-offset:3px}
+.fan img{display:block;width:100%;height:auto;transition:transform .2s ease;background:#fff;border-radius:4px;box-shadow:0 0 0 1px #3828471a,0 22px 40px -22px #382847aa}
 
 /* Call: plum panel like the tag's top band */
 .call{background:var(--purple);color:#fff;border-radius:24px;padding:44px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:32px;align-items:center}
@@ -142,24 +109,12 @@ footer{padding-block:8px 48px;max-width:1000px;margin:0 auto;color:var(--muted);
 
 @media (max-width:760px){
   .hero{padding-block:40px 20px}
-  .hero-grid,.idea .wrap,.cols,.call{grid-template-columns:minmax(0,1fr)}
+  .hero-grid,.call{grid-template-columns:minmax(0,1fr)}
+  .fan a{width:40%;margin-inline:-7%}
   .hero-grid{gap:24px}
   .top img{width:170px}
-  .sheet{padding:22px}
-  .sheet-top{grid-template-columns:minmax(0,1fr)}
-  .reads{justify-self:start;white-space:normal}
-  .call{padding:28px}
-  /* Tabs size to their labels; long words hyphenate only on the narrowest phones. */
-  .tabs{display:grid;grid-template-columns:repeat(3,auto)}
-  .tab{padding:8px 10px 10px;-webkit-hyphens:auto;hyphens:auto}
-  .tab .t{font-size:.9rem;line-height:1.25}
-  .stack::before{transform:translate(8px,8px)}
-  .stack::after{transform:translate(4px,4px)}
-  .kpi{grid-template-columns:minmax(0,1fr)}
-  .kpi div{grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:12px;padding:8px 12px}
-  .ruler text{font-size:16px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fan img{transition:none}}
 </style>
 </head>
 <body>
@@ -178,7 +133,7 @@ footer{padding-block:8px 48px;max-width:1000px;margin:0 auto;color:var(--muted);
     </div>
     <div class="hero-copy">
       <p class="lead">Thanks for being curious. Since you're here, let's talk strategic planning.</p>
-      <p>I'm Heather. I help boards, agencies, and organizations agree on where they're headed and build a plan people will actually use.</p>
+      <p>I'm Heather. My staff and I help boards, teams, and other groups agree on where they are headed and build a plan to get there.</p>
       <a class="btn" href="#call">Book a 15-minute call</a>
     </div>
   </div>
@@ -190,51 +145,30 @@ footer{padding-block:8px 48px;max-width:1000px;margin:0 auto;color:var(--muted);
 <main>
   <section class="idea" aria-label="What makes a plan strategic">
     <div class="wrap">
-      <blockquote>A strategic plan isn't a list of everything you do. It's a few clear choices about where to aim your energy for change.</blockquote>
-      <p>Your everyday work matters just as much. It simply lives in other plans. We help groups sort out which is which, find common ground on the big choices, and give the plan a shape that fits how they work.</p>
+      <blockquote>A strategic plan isn't a list of everything you do. It's a few clear choices about where to focus your energy for change.</blockquote>
     </div>
   </section>
 
   <div class="wrap">
-    <section aria-labelledby="blocks-h">
-      <div class="section-head">
-        <p class="label">The building blocks</p>
-        <h2 id="blocks-h">Every plan is made from the same pieces</h2>
-        <p>What changes is how you put them together and how far out you look.</p>
-      </div>
-      <div class="blocks">
-        <span class="chip">Vision</span>
-        <span class="chip">Pillars</span>
-        <span class="chip">Narrative goals</span>
-        <span class="chip">SMART goals</span>
-        <span class="chip">Targets &amp; measures</span>
-        <span class="chip">Strategies</span>
-        <span class="chip">Action plan</span>
-      </div>
-      <p class="blocks-note">Below are three common shapes, shown with the same sample organization so you can see only the approach change. They're starting points, not a menu. Mix and match what resonates.</p>
-    </section>
-
     <section aria-labelledby="shapes-h">
       <div class="section-head">
         <p class="label">Three ways to shape a plan</p>
-        <h2 id="shapes-h">Which one sounds like your organization?</h2>
+        <h2 id="shapes-h">There are lots of ways to think about your strategy for change.</h2>
+        <p>We can help you figure out which one fits your needs.</p>
       </div>
-      <div class="tabs" role="tablist" aria-label="Plan formats">
-        <button class="tab" role="tab" id="tab-1" aria-controls="sheet" aria-selected="true" data-i="0"><span class="n">Format 1</span><span class="t">Vision-led</span></button>
-        <button class="tab" role="tab" id="tab-2" aria-controls="sheet" aria-selected="false" data-i="1"><span class="n">Format 2</span><span class="t">Action &amp; accountability</span></button>
-        <button class="tab" role="tab" id="tab-3" aria-controls="sheet" aria-selected="false" data-i="2"><span class="n">Format 3</span><span class="t">Milestone hybrid</span></button>
-      </div>
-      <div class="stack">
-        <article class="sheet" id="sheet" role="tabpanel" aria-labelledby="tab-1" tabindex="0"></article>
+      <div class="fan">
+        <a href="images/plan-sample-1.pdf"><img src="images/plan-sample-1.png" width="850" height="1100" alt="Sample page from a vision-led strategic plan (PDF)"></a>
+        <a href="images/plan-sample-2.pdf"><img src="images/plan-sample-2.png" width="850" height="1100" alt="Sample page from an action and accountability plan (PDF)"></a>
+        <a href="images/plan-sample-3.pdf"><img src="images/plan-sample-3.png" width="850" height="1100" alt="Sample page from a milestone hybrid plan (PDF)"></a>
       </div>
     </section>
 
     <section id="call" aria-labelledby="call-h">
       <div class="call">
         <div>
-          <p class="label">15 minutes, no pitch deck</p>
+          <p class="label">15 minutes, quick chat</p>
           <h2 id="call-h">Let's talk about your plan</h2>
-          <p>Tell me where your organization is and what you're hoping a plan will do. I'll share how we'd approach it and which shape might fit.</p>
+          <p>Tell me where your organization is and what you're hoping a plan will do. I'll probably ask a bunch of questions, so we can land on an approach that works for you.</p>
           <ul>
             <li>Starting a first plan, or refreshing an old one</li>
             <li>Stuck between big vision and day-to-day reality</li>
@@ -258,107 +192,5 @@ footer{padding-block:8px 48px;max-width:1000px;margin:0 auto;color:var(--muted);
   <a href="https://www.peakfacilitation.com">peakfacilitation.com</a>
 </footer>
 
-<script>
-const formats = [
-  {
-    name:"Vision-led",
-    sub:"One distant vision, a handful of enduring pillars, and strategies to carry them. Progress is described in words, not numbers.",
-    reads:"Reads like a vision & values document",
-    horizon:{vision:10, plan:5, marks:[5,10], note:"10-year vision, 5-year plan"},
-    ladder:[
-      ["Vision","10 years out, inspiring",1],
-      ["Pillars","the organizing backbone",1],
-      ["Narrative goals","the future, in plain language",1],
-      ["Strategies","3–4 per pillar",1],
-      ["Signs of progress","qualitative, no hard targets",1],
-      ["KPIs & action plan","intentionally left out",0]
-    ],
-    sampleLabel:"How a goal reads",
-    quote:"We see a basin where water is a shared inheritance, not a contested resource, and where neighbors decide about water in the same room, with the same information.",
-    extra:'<p class="label">Sign of progress</p><p>Residents and producers start calling the river “ours.”</p>',
-    best:"Your board wants to align on identity and direction before committing to numbers, and you want a document the public will read."
-  },
-  {
-    name:"Action & accountability",
-    sub:"A nearer-term vision, a few SMART goals with baselines and targets, and a one-year action plan with owners and deadlines.",
-    reads:"Reads like a working tracker",
-    horizon:{vision:5, plan:1, marks:[1,5], note:"5-year vision, 1-year action plan"},
-    ladder:[
-      ["Vision","5 years out, concrete",1],
-      ["SMART goals","specific, measurable, time-bound",1],
-      ["KPIs","baseline → target for each goal",1],
-      ["Action plan","who does what, by when",1],
-      ["Pillars","goals stand in for them",0],
-      ["Narrative goals","minimal",0]
-    ],
-    sampleLabel:"How a goal reads",
-    quote:"By June 2032, restore 40 miles of priority stream habitat and move 3 sub-watersheds from “fair” to “good.”",
-    extra:'<div class="kpi"><div><span>Baseline</span><strong>0 mi</strong></div><div><span>Target</span><strong>40 mi</strong></div><div><span>Year 1 owner</span><strong>Watershed lead</strong></div></div>',
-    best:"Your board, funders, or staff need accountability and something to execute against, and the big question is “how will we know it worked?”"
-  },
-  {
-    name:"Milestone hybrid",
-    sub:"The long vision and pillars of a vision-led plan, plus measurable checkpoints at three and five years.",
-    reads:"Reads like a vision with checkpoints",
-    horizon:{vision:10, plan:5, marks:[3,5,10], note:"10-year vision, 3- and 5-year targets"},
-    ladder:[
-      ["Vision","10 years out",1],
-      ["Pillars","the organizing backbone",1],
-      ["Narrative goals","one short statement per pillar",1],
-      ["Milestone targets","measurable at 3 and 5 years",1],
-      ["Strategies","how each pillar advances",1],
-      ["Task-level action plan","targets, not task lists",0]
-    ],
-    sampleLabel:"How a goal reads",
-    quote:"A basin where water is healthy, connected, and shared, with checkpoints the community can see long before 2037.",
-    extra:'<div class="kpi"><div><span>3 years</span><strong>15 mi</strong></div><div><span>5 years</span><strong>40 mi</strong></div><div><span>10 years</span><strong>Reconnected</strong></div></div>',
-    best:"People want a vision to rally around and numbers they can hold themselves to, with interim reviews across a full decade."
-  }
-];
-
-function ruler(h){
-  const x = y => 20 + (y/10)*460;
-  let ticks = "";
-  for(let y=0;y<=10;y++){ ticks += `<line class="tick" x1="${x(y)}" y1="40" x2="${x(y)}" y2="${y%5===0?48:44}"/>`; }
-  const marks = h.marks.map(m=>`<circle cx="${x(m)}" cy="22" r="5" fill="var(--sheet)" stroke="var(--purple)" stroke-width="2.5"/><text x="${x(m)}" y="66" text-anchor="middle">${m} yr</text>`).join("");
-  return `<div class="ruler"><p class="label">Time horizon · ${h.note}</p>
-  <svg viewBox="0 0 500 74" role="img" aria-label="${h.note}">
-    <line class="axis" x1="20" y1="40" x2="480" y2="40"/>${ticks}
-    <text x="20" y="66" text-anchor="middle">Now</text>
-    <line class="span vision" x1="${x(0)}" y1="12" x2="${x(h.vision)}" y2="12"/>
-    <line class="span" x1="${x(0)}" y1="22" x2="${x(h.plan)}" y2="22"/>
-    ${marks}
-  </svg>
-  <div class="legend"><span><i style="background:var(--sky)"></i>Vision</span><span><i style="background:var(--purple)"></i>Plan &amp; checkpoints</span></div></div>`;
-}
-
-function render(i){
-  const f = formats[i];
-  const ladder = f.ladder.map(([b,s,on])=>`<li class="${on?'':'off'}"><span class="dot"></span><span><b>${b}</b><small>${s}</small></span></li>`).join("");
-  document.getElementById("sheet").innerHTML = `
-    <div class="sheet-top">
-      <div><p class="label">Format ${i+1} of 3</p><h3>${f.name}</h3><p class="sub">${f.sub}</p></div>
-      <span class="reads">${f.reads}</span>
-    </div>
-    <div class="cols">
-      <div><p class="label" style="margin-bottom:10px">What's in it</p><ul class="ladder">${ladder}</ul></div>
-      <div style="display:grid;gap:24px;align-content:start">
-        <div class="sample"><p class="label">${f.sampleLabel}</p><p class="quote">${f.quote}</p>${f.extra}</div>
-        ${ruler(f.horizon)}
-      </div>
-    </div>
-    <div class="best"><span class="label">Best when</span><p>${f.best}</p></div>`;
-  document.getElementById("sheet").setAttribute("aria-labelledby","tab-"+(i+1));
-  document.querySelectorAll(".tab").forEach((t,j)=>{t.setAttribute("aria-selected", j===i ? "true":"false"); t.tabIndex = j===i?0:-1;});
-}
-const tabs=[...document.querySelectorAll(".tab")];
-tabs.forEach(t=>t.addEventListener("click",()=>render(+t.dataset.i)));
-tabs.forEach(t=>t.addEventListener("keydown",e=>{
-  if(e.key!=="ArrowRight"&&e.key!=="ArrowLeft")return;
-  const i=(+t.dataset.i + (e.key==="ArrowRight"?1:2))%3; render(i); tabs[i].focus();
-}));
-const start = {"format-2":1,"format-3":2}[location.hash.slice(1)] ?? 0;
-render(start);
-</script>
 </body>
 </html>
