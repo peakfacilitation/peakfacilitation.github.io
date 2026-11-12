@@ -6,3 +6,9 @@ node_modules/
 
 history/
 .worktrees/
+
+/.beads/
+/.beads.gate.lock
+/.cursor/
+/.mcp.json
+/firebase-debug.log*

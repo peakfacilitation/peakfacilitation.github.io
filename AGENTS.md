@@ -1,40 +1,29 @@
 # Agent Instructions
 
-This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get started.
+Use local Beads with embedded Dolt for issue tracking. This repository is public.
 
-## Quick Reference
+For a fresh clone, initialize a local database first.
 
 ```bash
-bd ready              # Find available work
-bd show <id>          # View issue details
-bd update <id> --status in_progress  # Claim work
-bd close <id>         # Complete work
-bd sync               # Sync with git
+mise exec github:gastownhall/beads@1.3.4 -- bd init --stealth --skip-agents --skip-hooks
+mise exec github:gastownhall/beads@1.3.4 -- bd config set no-push true
 ```
 
-## Landing the Plane (Session Completion)
+Load the workflow when starting a session.
 
-**When ending a work session**, you MUST complete ALL steps below. Work is NOT complete until `git push` succeeds.
+```bash
+mise exec github:gastownhall/beads@1.3.4 -- bd prime
+```
 
-**MANDATORY WORKFLOW:**
+Use the same Beads version for `ready`, `show`, `update --claim`, and `close`.
+Keep `.beads/` and its backups out of Git.
+Keep the public GitHub repository out of the Beads remotes.
 
-1. **File issues for remaining work** - Create issues for anything that needs follow-up
-2. **Run quality gates** (if code changed) - Tests, linters, builds
-3. **Update issue status** - Close finished work, update in-progress items
-4. **PUSH TO REMOTE** - This is MANDATORY:
-   ```bash
-   git pull --rebase
-   bd sync
-   git push
-   git status  # MUST show "up to date with origin"
-   ```
-5. **Clean up** - Clear stashes, prune remote branches
-6. **Verify** - All changes committed AND pushed
-7. **Hand off** - Provide context for next session
+## Landing changes
 
-**CRITICAL RULES:**
-- Work is NOT complete until `git push` succeeds
-- NEVER stop before pushing - that leaves work stranded locally
-- NEVER say "ready to push when you are" - YOU must push
-- If push fails, resolve and retry until it succeeds
+Run the relevant checks, update local issue status, and verify the files staged
+for commit. Build the site with `npm run build` and include the intended changes
+under `docs/`. GitHub Pages publishes `master:/docs`.
 
+Honor any review or publishing hold. When publishing is authorized, pull with
+rebase, push the reviewed commits, and verify the deployment.
