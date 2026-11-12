@@ -1,7 +1,7 @@
 {% if not loop.first %}<div class="divider"></div>{% endif %}
 <a name="{{ person.slug }}"></a>
 <div class="lead-sidebar">
-    <img src="images/{{ person.image }}" width="280" height="194" alt="{{ person.alt }}" />
+    <img src="images/{{ person.image }}" width="280" height="194" style="object-fit: cover;" alt="{{ person.alt }}" />
     <p><strong>{{ person.name }}</strong><br/> {{ person.title }}
     </p>
 </div>
